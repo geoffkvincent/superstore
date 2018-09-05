@@ -1,6 +1,8 @@
 <h1><%= @department.name %> - <%= @item.name %></h1>
 <p><%= @item.product_description %></p>
-<p><%= @item.quantity %></p>
+<p><%= "#{@item.quantity} : in stock" %></p>
+<button id='cart'>Add to Cart</button>
+<button id='view_cart'>View Cart</button>
 
 <h2>Comments</h2>
 
