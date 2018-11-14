@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resources :items
   end
 
+  resources :carts
+
   
   scope 'items/:item_id', as: 'item' do
     resources :comments, only: [:new, :create]
