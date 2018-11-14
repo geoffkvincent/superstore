@@ -3,7 +3,7 @@
 <br/>
 <%= link_to 'Create a new item', new_department_item_path(@department) %>
 <br/>
-<%= link_to '', (@department) %>
+<%= link_to '', department_path(@department) %>
 <ul>
   <% @items.each do |item| %>
     <li><%= link_to item.name, [@department, item] %></li>
